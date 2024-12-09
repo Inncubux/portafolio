@@ -4,10 +4,11 @@ import { initFlowbite } from 'flowbite';
 import { CardComponent } from '../../Components/card/card.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormComponent } from "../../Components/form/form.component";
 
 @Component({
   selector: 'home-page',
-  imports: [ButtonComponent, CardComponent, HttpClientModule, CommonModule],
+  imports: [CardComponent, HttpClientModule, CommonModule, ButtonComponent, FormComponent],
   standalone: true,
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
